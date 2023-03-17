@@ -21,8 +21,8 @@
 <meta property="og:title" content="How to publish a simple GitHub Pages with a Jekyll template" />
 <meta name="author" content="Ana Bittencourt" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Since deciding on becoming a developer professionally and migrating from a design career to programming, I remembered that learning in public could be a good ally to document my discoveries and struggles along the way. I thought that setting up a blog within GitHub pages could be a nice way to refresh my Git and GitHub skills, so I did some research and made my first attempts. By the way, I found this cheatsheet from GitHub that helped me remember the main commands. This task turned out to be more difficult than I imagined, the tutorials I found worked on video, but I couldn’t figure out how to make my site go live. So, I want to share how I figured out the implementation that worked for me and could perhaps help you as well." />
-<meta property="og:description" content="Since deciding on becoming a developer professionally and migrating from a design career to programming, I remembered that learning in public could be a good ally to document my discoveries and struggles along the way. I thought that setting up a blog within GitHub pages could be a nice way to refresh my Git and GitHub skills, so I did some research and made my first attempts. By the way, I found this cheatsheet from GitHub that helped me remember the main commands. This task turned out to be more difficult than I imagined, the tutorials I found worked on video, but I couldn’t figure out how to make my site go live. So, I want to share how I figured out the implementation that worked for me and could perhaps help you as well." />
+<meta name="description" content="Since deciding on becoming a developer professionally and migrating from a design career to programming, I remembered that learning in public could be a good ally to document my discoveries and struggles along the way." />
+<meta property="og:description" content="Since deciding on becoming a developer professionally and migrating from a design career to programming, I remembered that learning in public could be a good ally to document my discoveries and struggles along the way." />
 <link rel="canonical" href="http://localhost:4000/2023/03/16/how-to-publish/" />
 <meta property="og:url" content="http://localhost:4000/2023/03/16/how-to-publish/" />
 <meta property="og:site_name" content="Ana Bittencourt" />
@@ -31,7 +31,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="How to publish a simple GitHub Pages with a Jekyll template" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ana Bittencourt","url":"https://twitter.com/ana_bitt3nco"},"dateModified":"2023-03-16T00:00:00-03:00","datePublished":"2023-03-16T00:00:00-03:00","description":"Since deciding on becoming a developer professionally and migrating from a design career to programming, I remembered that learning in public could be a good ally to document my discoveries and struggles along the way. I thought that setting up a blog within GitHub pages could be a nice way to refresh my Git and GitHub skills, so I did some research and made my first attempts. By the way, I found this cheatsheet from GitHub that helped me remember the main commands. This task turned out to be more difficult than I imagined, the tutorials I found worked on video, but I couldn’t figure out how to make my site go live. So, I want to share how I figured out the implementation that worked for me and could perhaps help you as well.","headline":"How to publish a simple GitHub Pages with a Jekyll template","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/03/16/how-to-publish/"},"url":"http://localhost:4000/2023/03/16/how-to-publish/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Ana Bittencourt","url":"https://twitter.com/ana_bitt3nco"},"dateModified":"2023-03-16T00:00:00-03:00","datePublished":"2023-03-16T00:00:00-03:00","description":"Since deciding on becoming a developer professionally and migrating from a design career to programming, I remembered that learning in public could be a good ally to document my discoveries and struggles along the way.","headline":"How to publish a simple GitHub Pages with a Jekyll template","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/03/16/how-to-publish/"},"url":"http://localhost:4000/2023/03/16/how-to-publish/"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -51,9 +51,11 @@
         <article class="post">
   <h1 class="post-title">How to publish a simple GitHub Pages with a Jekyll template</h1>
   <time datetime="2023-03-16T00:00:00-03:00" class="post-date">16 Mar 2023</time>
-  <p>Since deciding on becoming a developer professionally and migrating from a design career to programming, I remembered that <a href="https://www.swyx.io/learn-in-public">learning in public</a> could be a good ally to document my discoveries and struggles along the way.
-I thought that setting up a blog within GitHub pages could be a nice way to refresh my Git and GitHub skills, so I did some research and made my first attempts. By the way, I found this <a href="https://education.github.com/git-cheat-sheet-education.pdf">cheatsheet</a> from GitHub that helped me remember the main commands.
-This task turned out to be more difficult than I imagined, the tutorials I found worked on video, but I couldn’t figure out how to make my site go live. So, I want to share how I figured out the implementation that worked for me and could perhaps help you as well.</p>
+  <p>Since deciding on becoming a developer professionally and migrating from a design career to programming, I remembered that <a href="https://www.swyx.io/learn-in-public">learning in public</a> could be a good ally to document my discoveries and struggles along the way.</p>
+
+<p>I thought that setting up a blog within GitHub pages could be a nice way to refresh my Git and GitHub skills, so I did some research and made my first attempts. By the way, I found this <a href="https://education.github.com/git-cheat-sheet-education.pdf">cheatsheet</a> from GitHub that helped me remember the main commands.</p>
+
+<p>This task turned out to be more difficult than I imagined, the tutorials I found worked on video, but I couldn’t figure out how to make my site go live. So, I want to share how I figured out the implementation that worked for me and could perhaps help you as well.</p>
 
 <h2 id="preparing-the-environment">Preparing the environment</h2>
 <p>The basic setup for this includes installing Ruby and Jekyll via terminal:</p>
@@ -67,43 +69,64 @@ This task turned out to be more difficult than I imagined, the tutorials I found
 <p>Next, we need to change that forked repository to our github.io personal name. This will be your username.github.io.</p>
 
 <h3 id="cloning-into-our-machine">Cloning into our machine</h3>
-<p>Go ahead and copy the URL to your repository with the template. Now, on the terminal, navigate to the folder where you want to have your project, and run
-<code class="language-plaintext highlighter-rouge">git clone yourURL</code></p>
+<p>Go ahead and copy the URL to your repository with the template. Now, on the terminal, navigate to the folder where you want to have your project, and run</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">git</span> <span class="nx">clone</span> <span class="nx">yourURL</span></code></pre></figure>
 
 <p>Once that’s done, cd to your directory and ls, the files should be there.</p>
 
 <h3 id="editing-the-template">Editing the template</h3>
 <p>With your code editor of choice, find your project folder and start by editing the _config.yml file. Here, it’s important to change the url to your own github.io domain. Go ahead and edit your personal info as well.</p>
 
-<p>Once that’s done, go to your terminal and run
-<code class="language-plaintext highlighter-rouge">git add .</code>
-to stage all your changes, and 
-<code class="language-plaintext highlighter-rouge">git commit -m “Commit description”</code>
-to commit your changes.</p>
+<p>Once that’s done, add all your changes and commit by running</p>
 
-<p>Now, we need to run
-<code class="language-plaintext highlighter-rouge">bundle install</code></p>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">git</span> <span class="nx">add</span> <span class="p">.</span>
+<span class="nx">git</span> <span class="nx">commit</span> <span class="o">-</span><span class="nx">m</span> <span class="err">“</span><span class="nx">Commit</span> <span class="nx">description</span><span class="err">”</span></code></pre></figure>
+
+<p>Now, we need to run</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">bundle</span> <span class="nx">install</span></code></pre></figure>
 
 <p>Here, I ran into an error, telling me that my Ruby version was incompatible. This was solved by running</p>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">bundle</span> <span class="nx">update</span></code></pre></figure>
 
-<p><code class="language-plaintext highlighter-rouge">bundle update</code></p>
+<p>Then I followed the Poole’s instructions to install the Jekyll gem and related dependencies</p>
 
-<p>Then, I followed the Poole instructions to install the Jekyll gem and related dependencies</p>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">gem</span> <span class="nx">install</span> <span class="nx">jekyll</span> <span class="nx">jekyll</span><span class="o">-</span><span class="nx">gist</span> <span class="nx">jekyll</span><span class="o">-</span><span class="nx">sitemap</span> <span class="nx">jekyll</span><span class="o">-</span><span class="nx">seo</span><span class="o">-</span><span class="nx">tag</span></code></pre></figure>
 
-<p><code class="language-plaintext highlighter-rouge">gem install jekyll jekyll-gist jekyll-sitemap jekyll-seo-tag</code></p>
+<p>Here, I ran the bundle install again to see if it was successful</p>
 
-<p>Now, run it again
-<code class="language-plaintext highlighter-rouge">bundle install</code></p>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">bundle</span> <span class="nx">install</span></code></pre></figure>
 
 <p>And the terminal said the bundle was installed successfully.
-Now, we have our image.</p>
+Now, we have the image.</p>
 
-<h2 id="running-jekyll-local-server">Running Jekyll local server</h2>
-<p>To run this on a local server, do the following command on the terminal</p>
+<h2 id="running-a-local-server">Running a local server</h2>
+<p>To run your template on a local server, do the following command on the terminal</p>
 
-<p><code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></p>
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">bundle</span> <span class="nx">exec</span> <span class="nx">jekyll</span> <span class="nx">serve</span></code></pre></figure>
 
-<p>Once the server is running, copy the server address from the terminal and open it on your browser. If successful, the website shows up with the edited information.</p>
+<p>Once the server is up and running, copy the server address informed by the terminal and open it on your browser. The website will show up with your template and the edits you made earlier.</p>
+
+<p>If you make more changes on your code while the server is running, make sure you save them and refresh your browser: the changes will appear live.</p>
+
+<p>Once you’re done editing, stop the server following the terminal instructions (on my Mac, this was done with <code class="language-plaintext highlighter-rouge">control+c</code>). Commit and push all your changes.</p>
+
+<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">git</span> <span class="nx">add</span> <span class="p">.</span>
+<span class="nx">git</span> <span class="nx">commit</span> <span class="o">-</span><span class="nx">m</span> <span class="err">“</span><span class="nx">Commit</span> <span class="nx">description</span><span class="err">”</span>
+<span class="nx">git</span> <span class="nx">push</span></code></pre></figure>
+
+<h2 id="deployment">Deployment</h2>
+<p>Now it’s time to get all the work that was done to the GitHub Pages.
+Open your repository on GitHub, go to   <code class="language-plaintext highlighter-rouge">Settings &gt; Pages &gt; Build and deployment</code>.</p>
+
+<p>There, you need to change source to GitHub Actions.</p>
+
+<p><img src="assets/image-post-jekyll.png" alt="placeholder" title="First image" /></p>
+
+<p>This step is the one I struggled with the most, because I presumed it was important, but didn’t know how to set up. It was a blind spot, there were no explanations on this step on the resources I looked up. After some time I got brave enough to follow the standard steps and see what would happen, and there it was, a live template!</p>
+
+<p>Now, go to Settings &gt; Pages, again, and you should see the card saying your site is live.</p>
 
 
 </article>
@@ -114,7 +137,7 @@ Now, we have our image.</p>
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2023-03-16T19:52:44-03:00">2023</time>. All rights reserved.
+          &copy; <time datetime="2023-03-17T01:25:53-03:00">2023</time>. All rights reserved.
         </small>
       </footer>
     </div>

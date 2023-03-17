@@ -22,51 +22,73 @@ Next, we need to change that forked repository to our github.io personal name. T
 
 ### Cloning into our machine
 Go ahead and copy the URL to your repository with the template. Now, on the terminal, navigate to the folder where you want to have your project, and run
-`git clone yourURL`
+
+{% highlight js %}
+git clone yourURL
+{% endhighlight %}
 
 Once that’s done, cd to your directory and ls, the files should be there.
 
 ### Editing the template
 With your code editor of choice, find your project folder and start by editing the _config.yml file. Here, it’s important to change the url to your own github.io domain. Go ahead and edit your personal info as well.
 
-Once that’s done, go to your terminal and run
-`git add .`
-to stage all your changes, and 
-`git commit -m “Commit description”`
-to commit your changes.
+Once that’s done, add all your changes and commit by running
+
+{% highlight js %}
+git add .
+git commit -m “Commit description”
+{% endhighlight %}
 
 Now, we need to run
-`bundle install`
 
-Here, I ran into an error, telling me that my Ruby version was incompatible. This was solved by running
+{% highlight js %}
+bundle install
+{% endhighlight %}
 
-`bundle update`
+Here, I ran into an error, telling me that my Ruby version was incompatible. This was solved by running {% highlight js %}bundle update{% endhighlight %}
 
-Then, I followed the Poole instructions to install the Jekyll gem and related dependencies
+Then I followed the Poole's instructions to install the Jekyll gem and related dependencies
 
-`gem install jekyll jekyll-gist jekyll-sitemap jekyll-seo-tag`
+{% highlight js %}
+gem install jekyll jekyll-gist jekyll-sitemap jekyll-seo-tag
+{% endhighlight %}
 
-Now, run it again
-`bundle install`
+Here, I ran the bundle install again to see if it was successful
+{% highlight js %}
+bundle install
+{% endhighlight %}
 
 And the terminal said the bundle was installed successfully.
-Now, we have our image.
+Now, we have the image.
 
-## Running Jekyll local server
-To run this on a local server, do the following command on the terminal
+## Running a local server
+To run your template on a local server, do the following command on the terminal
 
-`bundle exec jekyll serve`
+{% highlight js %}
+bundle exec jekyll serve
+{% endhighlight %}
 
-Once the server is running, copy the server address from the terminal and open it on your browser. If successful, the website shows up with the edited information.
+Once the server is up and running, copy the server address informed by the terminal and open it on your browser. The website will show up with your template and the edits you made earlier.
 
-If you edit changes on your code with the server running, just update the page and your changes will appear live.
+If you make more changes on your code while the server is running, make sure you save them and refresh your browser: the changes will appear live.
 
-Once you’re done editing, stop the server following the terminal instructions (on my Mac, this was done with control+c). Commit and push all your changes.
+Once you’re done editing, stop the server following the terminal instructions (on my Mac, this was done with `control+c`). Commit and push all your changes.
+
+{% highlight js %}
+git add .
+git commit -m “Commit description”
+git push
+{% endhighlight %}
 
 ## Deployment
-Go to your repository Settings > Pages > Build and deployment
-There, you need to change source to GitHub Actions. Next, on Jekyll, click Configure.
-This is the step that slowed down my process, because I was unsure of how it would work. I just went ahead, clicked Start commit, and did it through a branch and then merged it, but I’m pretty sure you can commit directly to main.
+Now it's time to get all the work that was done to the GitHub Pages.
+Open your repository on GitHub, go to   `Settings > Pages > Build and deployment`.
+
+There, you need to change source to GitHub Actions.
+
+![placeholder](assets/image-post-jekyll.png "First image")
+
+This step is the one I struggled with the most, because I presumed it was important, but didn't know how to set up. It was a blind spot, there were no explanations on this step on the resources I looked up. After some time I got brave enough to follow the standard steps and see what would happen, and there it was, a live template!
 
 Now, go to Settings > Pages, again, and you should see the card saying your site is live.
 
