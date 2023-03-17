@@ -3,7 +3,6 @@ layout: post
 title: How to publish a simple GitHub Pages with a Jekyll template
 ---
 
-# How to publish a Poole template to GitHub Pages
 Since deciding on becoming a developer professionally and migrating from a design career to programming, I remembered that [learning in public](https://www.swyx.io/learn-in-public) could be a good ally to document my discoveries and struggles along the way.
 
 I thought that setting up a blog within GitHub pages could be a nice way to refresh my Git and GitHub skills, so I did some research and made my first attempts. By the way, I found this [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf) from GitHub that helped me remember the main commands.
