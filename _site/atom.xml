@@ -4,7 +4,7 @@
  <title>Ana Bittencourt</title>
  <link href="/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2023-03-17T01:25:53-03:00</updated>
+ <updated>2023-03-17T10:30:02-03:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Ana Bittencourt</name>
@@ -88,7 +88,7 @@ Open your repository on GitHub, go to   &lt;code class=&quot;language-plaintext 
 
 &lt;p&gt;There, you need to change source to GitHub Actions.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/image-post-jekyll.png&quot; alt=&quot;placeholder&quot; title=&quot;First image&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;image-post-jekyll.png&quot; alt=&quot;image&quot; title=&quot;First image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This step is the one I struggled with the most, because I presumed it was important, but didn’t know how to set up. It was a blind spot, there were no explanations on this step on the resources I looked up. After some time I got brave enough to follow the standard steps and see what would happen, and there it was, a live template!&lt;/p&gt;
 

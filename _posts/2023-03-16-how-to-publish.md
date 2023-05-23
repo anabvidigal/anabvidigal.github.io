@@ -86,7 +86,7 @@ Open your repository on GitHub, go to   `Settings > Pages > Build and deployment
 
 There, you need to change source to GitHub Actions.
 
-![placeholder](assets/image-post-jekyll.png "First image")
+![image](image-post-jekyll.png "First image")
 
 This step is the one I struggled with the most, because I presumed it was important, but didn't know how to set up. It was a blind spot, there were no explanations on this step on the resources I looked up. After some time I got brave enough to follow the standard steps and see what would happen, and there it was, a live template!
 
