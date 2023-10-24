@@ -40,3 +40,12 @@ $('#collapseRipples').on('hidden.bs.collapse', function () {
 // Scroll back to the initial position
 window.scrollTo(0, initialScrollPosition);
 });
+
+// No Break
+$('#collapseNoBreak').on('show.bs.collapse', function () {
+    initialScrollPosition = window.scrollY;
+    });
+
+$('#collapseNoBreak').on('hidden.bs.collapse', function () {
+window.scrollTo(0, initialScrollPosition);
+});
