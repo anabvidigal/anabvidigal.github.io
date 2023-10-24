@@ -18,7 +18,7 @@ function addTags(list, elementId) {
     list.forEach(item => {
         let span = document.createElement('span');
         span.textContent = item;
-        span.className = 'badge badge-light badges';   
+        span.className = 'badge badge-light badges text-dark';   
         container.appendChild(span);
     });
 }

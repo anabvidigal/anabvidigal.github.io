@@ -82,6 +82,33 @@
                     <p>A companion app that facilitates making appointments with SEAP's psychologists, offers daily check-ins to help students reflect on their mental health and academic struggles, and offers personalized insights and workshops based on the students' unique needs.</p>
                 </div>
             </div>
+
+            <!-- Testing out collapse -->
+            <h6 class="d-inline-flex gap-1">
+                <a data-bs-toggle="collapse" href="#collapsePuc" role="button">
+                  Project details
+                </a>
+            </h6>
+              <div class="collapse" id="collapsePuc">
+                <div class="card card-body">
+                  <img src="imgs/pucacolhe/pucacolhe01.jpeg" alt="">
+                  <img src="imgs/pucacolhe/pucacolhe02.jpeg" alt="">
+                  <img src="imgs/pucacolhe/pucacolhe03.jpeg" alt="">
+                  <img src="imgs/pucacolhe/pucacolhe04.jpeg" alt="">
+                  <img src="imgs/pucacolhe/pucacolhe05.jpeg" alt="">
+                  <img src="imgs/pucacolhe/pucacolhe06.jpeg" alt="">
+                  <img src="imgs/pucacolhe/pucacolhe07.jpeg" alt="">
+                  <img src="imgs/pucacolhe/pucacolhe08.jpeg" alt="">
+                  <img src="imgs/pucacolhe/pucacolhe09.jpeg" alt="">
+                  <img src="imgs/pucacolhe/pucacolhe10.jpeg" alt="">
+                  <h6 class="d-inline-flex gap-1">
+                    <a data-bs-toggle="collapse" href="#collapsePuc" role="button">
+                      Close details
+                    </a>
+                </h6>
+                </div>
+              </div>
+
             <br>
             <br>
             <br>
@@ -125,6 +152,28 @@
                         <p>Bimo helps expand young people's emotional awareness and vocabulary with daily journaling sessions. Write about emotions, reflect on what they mean to you, discover and explore their meanings.</p>
                     </div>
                 </div>
+
+                <!-- Testing out collapse -->
+            <h6 class="d-inline-flex gap-1">
+                <a data-bs-toggle="collapse" href="#collapseBimo" role="button">
+                  Project details
+                </a>
+            </h6>
+              <div class="collapse" id="collapseBimo">
+                <div class="card card-body">
+                  <img src="imgs/bimo/bimo01.gif" alt="">
+                  <img src="imgs/bimo/bimo02.gif" alt="">
+                  <img src="imgs/bimo/bimo03.jpeg" alt="">
+                  <img src="imgs/bimo/bimo04.gif" alt="">
+                  <img src="imgs/bimo/bimo05.gif" alt="">
+                  <img src="imgs/bimo/bimo06.gif" alt="">
+                  <h6 class="d-inline-flex gap-1">
+                    <a data-bs-toggle="collapse" href="#collapseBimo" role="button">
+                      Close details
+                    </a>
+                </h6>
+                </div>
+              </div>
                 <br>
                 <br>
                 <br>
@@ -168,6 +217,23 @@
                         <p>Dux offers detailed information on work spaces available around the city, with ratings from the community on digital nomads specific needs. A guide that focuses on nomads' autonomy and productivity.</p>
                     </div>
                 </div>
+
+                <h6 class="d-inline-flex gap-1">
+                    <a data-bs-toggle="collapse" href="#collapseDux" role="button">
+                      Project details
+                    </a>
+                </h6>
+                  <div class="collapse" id="collapseDux">
+                    <div class="card card-body">
+                      <img src="imgs/dux/dux01.png" alt="">
+                      <img src="imgs/dux/dux02.png" alt="">
+                      <h6 class="d-inline-flex gap-1">
+                        <a data-bs-toggle="collapse" href="#collapseDux" role="button">
+                          Close details
+                        </a>
+                    </h6>
+                    </div>
+                  </div>
                 <br>
                 <br>
                 <br>
@@ -210,6 +276,23 @@
                         <p>PetMatch allows choosing preferences for the pet's personality and traits, so the owner and the pet are more likely to be a good fit into each other's routines. Look up pets that are available for adoption, schedule visits with their caretakers, and get informed about how to take care of your pet.</p>
                     </div>
                 </div>
+
+                <h6 class="d-inline-flex gap-1">
+                    <a data-bs-toggle="collapse" href="#collapsePet" role="button">
+                      Project details
+                    </a>
+                </h6>
+                  <div class="collapse" id="collapsePet">
+                    <div class="card card-body">
+                      <img src="imgs/petmatch/petmatch-long.png" alt="">
+                      <h6 class="d-inline-flex gap-1">
+                        <a data-bs-toggle="collapse" href="#collapsePet" role="button">
+                          Close details
+                        </a>
+                    </h6>
+                    </div>
+                  </div>
+
                 <br>
                 <br>
                 <br>
@@ -231,7 +314,7 @@
                     list.forEach(item => {
                         let span = document.createElement('span');
                         span.textContent = item;
-                        span.className = 'badge badge-light badges';   
+                        span.className = 'badge badge-light text-dark badges';   
                         container.appendChild(span);
                     });
                 }
@@ -240,6 +323,47 @@
                 addTags(bimo, 'bimoProject');
                 addTags(dux, 'duxProject');
                 addTags(petMatch, 'petMatchProject');
+
+                // Scroll collapse
+                var initialScrollPosition;
+
+                // PUC Acolhe
+                $('#collapsePuc').on('show.bs.collapse', function () {
+                initialScrollPosition = window.scrollY;
+                });
+
+                // Function to handle collapse close event
+                $('#collapsePuc').on('hidden.bs.collapse', function () {
+                // Scroll back to the initial position
+                window.scrollTo(0, initialScrollPosition);
+                });
+
+                // Bimo
+                $('#collapseBimo').on('show.bs.collapse', function () {
+                initialScrollPosition = window.scrollY;
+                });
+
+                $('#collapseBimo').on('hidden.bs.collapse', function () {
+                window.scrollTo(0, initialScrollPosition);
+                });
+
+                // Dux
+                $('#collapseDux').on('show.bs.collapse', function () {
+                initialScrollPosition = window.scrollY;
+                });
+
+                $('#collapseDux').on('hidden.bs.collapse', function () {
+                window.scrollTo(0, initialScrollPosition);
+                });
+
+                // Pet Match
+                $('#collapsePet').on('show.bs.collapse', function () {
+                initialScrollPosition = window.scrollY;
+                });
+
+                $('#collapsePet').on('hidden.bs.collapse', function () {
+                window.scrollTo(0, initialScrollPosition);
+                });
 
             </script>
     </body>
