@@ -123,7 +123,7 @@ h5 > a[href]:hover {
   margin-right: calc(var(--unit) * -0.5);
 }
 
-h6 > a[href] {
+/* h6 > a[href] {
     text-decoration: none;
     background-color: #00000010;
     border-radius: calc(var(--unit) * 0.5);
@@ -137,6 +137,32 @@ h6 > a[href] {
 }
 
 h6 > a[href]:hover {
+    text-decoration: none;
+    background-color: navy;
+    border-radius: calc(var(--unit) * 0.5);
+    color: white;
+    padding-left: calc(var(--unit) * 2);
+    padding-right: calc(var(--unit) * 2);
+    padding-top: calc(var(--unit) * 1);
+    padding-bottom: calc(var(--unit) * 1);
+    margin-left: calc(var(--unit) * 0);
+    margin-right: calc(var(--unit) * 0); 
+} */
+
+#collapse-button {
+    text-decoration: none;
+    background-color: #00000010;
+    border-radius: calc(var(--unit) * 0.5);
+    color: black;
+    padding-left: calc(var(--unit) * 2);
+    padding-right: calc(var(--unit) * 2);
+    padding-top: calc(var(--unit) * 1);
+    padding-bottom: calc(var(--unit) * 1);
+    margin-left: calc(var(--unit) * 0);
+    margin-right: calc(var(--unit) * 0);
+}
+
+#collapse-button:hover {
     text-decoration: none;
     background-color: navy;
     border-radius: calc(var(--unit) * 0.5);
