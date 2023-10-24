@@ -153,3 +153,22 @@ h4 > a[href]:hover, h5 > a[href]:hover, h6 > a[href]:hover {
     top: 0;
     left: 0;
 }
+
+footer {
+    background-color: #00000005;
+    /* padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 32px; */
+    padding: 32px;
+    padding-bottom: 8px;
+}
+
+.footer {
+    color: #000000;
+    text-align: left;
+}
+
+#spacing-footer {
+    padding-left: 32px;
+    padding-right: 32px;
+}
