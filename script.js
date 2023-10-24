@@ -27,6 +27,16 @@ function addTags(list, elementId) {
 addTags(ripples, 'ripplesProject');
 addTags(noBreak, 'noBreakProject');
 
-// addTags(pucAcolhe, 'pucAcolheProject');
-// addTags(bimo, 'bimoProject');
-// addTags(petMatch, 'petMatchProject');
+// Collapse scroll
+var initialScrollPosition;
+
+// Ripples
+$('#collapseRipples').on('show.bs.collapse', function () {
+initialScrollPosition = window.scrollY;
+});
+
+// Function to handle collapse close event
+$('#collapseRipples').on('hidden.bs.collapse', function () {
+// Scroll back to the initial position
+window.scrollTo(0, initialScrollPosition);
+});
